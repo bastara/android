@@ -11,6 +11,20 @@ import java.net.URL;
 public class GetData {
     private static final String TAG = "!RTE";
 
+//    Переходим к коду. Прежде всего нужно помнить две вещи: нам требуется наличие подключения к интернету и обеспечить загрузку страницы в отдельном потоке.
+//
+//    Начнём с проверки подключения к интернету.
+//    public void onClick(View view) {
+//        ConnectivityManager myConnMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo networkinfo = myConnMgr.getActiveNetworkInfo();
+//
+//        if (networkinfo != null && networkinfo.isConnected()) {
+//            new DownloadPageTask().execute(bestUrl); // запускаем в новом потоке
+//        } else {
+//            Toast.makeText(this, "Нет интернета", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+
     static public boolean isInternetAvailable() {
         try {
             InetAddress ipAddr = InetAddress.getByName("http://google.comm"); //You can replace it with your name
