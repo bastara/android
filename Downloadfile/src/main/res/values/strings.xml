@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DownloadFile</string>
+    <string name="loadPage">Загрузить страницу</string>
+    <string name="list_rss">List RSS</string>
+    <string name="ListView">List View</string>
+    <string name="log_rss">Log RSS</string>
+    <string name="ListViewAdv">List View Adv</string>
+    <string name="ListViewReal">List View Real RSS</string>
+    <string name="real_rss">Real RSS</string>
+</resources>
