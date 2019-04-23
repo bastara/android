@@ -32,6 +32,9 @@
         <activity
             android:name=".ActivityListViewReal"
             android:label="@string/ListViewReal" />
+        <activity
+            android:name=".ActivityListLogDB"
+            android:label="@string/ListViewLogDB" />
     </application>
 
 </manifest>

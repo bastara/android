@@ -33,15 +33,19 @@ public class MainActivity extends AppCompatActivity {
         Intent listIntent = new Intent(this, ActivityListView.class);
         startActivity(listIntent);
     }
+
     public void onClickLVAdv(View view) {
         Intent listIntent = new Intent(this, ActivityListViewAdv.class);
         startActivity(listIntent);
     }
+
     public void onClickLVReal(View view) {
         Intent listIntent = new Intent(this, ActivityListViewReal.class);
         startActivity(listIntent);
     }
 
-
-
+    public void onClickLogDB(View view) {
+        Intent listIntent = new Intent(this, ActivityListLogDB.class);
+        startActivity(listIntent);
+    }
 }

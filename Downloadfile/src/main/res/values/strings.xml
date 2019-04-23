@@ -7,4 +7,5 @@
     <string name="ListViewAdv">List View Adv</string>
     <string name="ListViewReal">List View Real RSS</string>
     <string name="real_rss">Real RSS</string>
+    <string name="ListViewLogDB">лог БД</string>
 </resources>

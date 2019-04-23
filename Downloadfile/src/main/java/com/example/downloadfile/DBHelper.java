@@ -7,11 +7,11 @@ import android.util.Log;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String NEWS_TABLE = "newsTable";
+    public static final String NEWS_TABLE = "newsss";
 
 
     public DBHelper(Context context) {
-        super(context, "newsAggregator", null, 1);
+        super(context, "newsBase", null, 1);
     }
 
     @Override
@@ -22,12 +22,12 @@ public class DBHelper extends SQLiteOpenHelper {
         // создаем таблицу с полями
         db.execSQL("create table " + NEWS_TABLE + "("
                 + "id integer primary key autoincrement,"
-                + "title text not null,"
-                + "link text not null,"
-                + "description text not null,"
-                + "category text not null,"
+                + "title text,"
+                + "link text,"
+                + "description text,"
+                + "category text,"
                 //TODO нужно в дату превращать? есть рекомендация как стринг
-                + "pubDate text not null" + ");");
+                + "pubDate text" + ");");
     }
 
     @Override
