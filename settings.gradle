@@ -1,1 +1,1 @@
-include ':sherlock', ':Adapter', ':customadapter', ':Downloadfile', ':p0341_simplesqlite'
+include ':sherlock', ':Adapter', ':customadapter', ':Downloadfile', ':p0341_simplesqlite', ':testservice', ':layoutinflater', ':layoutinflaterchoise', ':layoutinflaterchoise'

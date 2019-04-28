@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "!REFRESH TIME";
+    private static final String TAG = "rssDB";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
