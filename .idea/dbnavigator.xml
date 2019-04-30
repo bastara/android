@@ -23,38 +23,48 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="3b6434bb-c0e4-4fc2-872e-bd5f64023295">
+        <schema name="main" object-types="table, index, view, constraint, column, dataset trigger" />
+      </connection>
+      <connection connection-id="8bbcedf7-c090-425a-a349-5d578a926913">
+        <schema name="main" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3b6434bb-c0e4-4fc2-872e-bd5f64023295">
-      <console name="smpConnection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "newsTable";
+      <console name="smpConnection" type="STANDARD" schema="main" session="Main">select * from &quot;newsTable&quot;;
 drop table if exists newsTable;
 
 
-insert into "newsTable" values (8,"adfa", "Васька", "Питер", "asdf", "asd");
+insert into &quot;newsTable&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;, &quot;asd&quot;);
 
 CREATE TABLE guerrsts(_id INTEGER, name TEXT, city TEXT, gender INTEGER, age INTEGER);
 drop table if exists guerrsts;
-insert into "guerrsts" values (8,"adfa", "Васька", "Питер", "asdf");
-select * from "guerrsts";
+insert into &quot;guerrsts&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;);
+select * from &quot;guerrsts&quot;;
 
 
 
 
 
-select * from "mytable";]]></console>
+select * from &quot;mytable&quot;;</console>
     </connection>
     <connection id="e1f2c9fb-0f79-4c97-806e-8d713d59414b">
-      <console name="Connection 1" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "newsss";
+      <console name="Connection 1" type="STANDARD" schema="main" session="Main">select * from &quot;newsss&quot;;
 drop table if exists newsss;
 
 
-insert into "newsTable" values (8,"adfa", "Васька", "Питер", "asdf", "asd");
+insert into &quot;newsTable&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;, &quot;asd&quot;);
 
 CREATE TABLE guerrsts(_id INTEGER, name TEXT, city TEXT, gender INTEGER, age INTEGER);
 drop table if exists guerrsts;
-insert into "guerrsts" values (8,"adfa", "Васька", "Питер", "asdf");
-select * from "guerrsts";]]></console>
+insert into &quot;guerrsts&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;);
+select * from &quot;guerrsts&quot;;</console>
+    </connection>
+    <connection id="8bbcedf7-c090-425a-a349-5d578a926913">
+      <console name="grocery" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "groceryList" ;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -63,6 +73,7 @@ select * from "guerrsts";]]></console>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="3b6434bb-c0e4-4fc2-872e-bd5f64023295" />
     <connection id="e1f2c9fb-0f79-4c97-806e-8d713d59414b" />
+    <connection id="8bbcedf7-c090-425a-a349-5d578a926913" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -190,6 +201,93 @@ select * from "guerrsts";]]></console>
           <database value="" />
           <files>
             <file path="C:\Users\Shurik\Documents\AndroidStudio\DeviceExplorer\unknown-custom_phone-192.168.19.101_5555\data\data\com.example.downloadfile\databases\newsBase" schema="main" />
+          </files>
+          <os-authentication value="false" />
+          <empty-authentication value="false" />
+          <user value="" />
+          <deprecated-pwd value="" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="8bbcedf7-c090-425a-a349-5d578a926913" active="true">
+        <database>
+          <name value="grocery" />
+          <description value="" />
+          <database-type value="SQLITE" />
+          <config-type value="BASIC" />
+          <database-version value="3.21" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="FILE" />
+          <host value="" />
+          <port value="" />
+          <database value="" />
+          <files>
+            <file path="C:\Users\Shurik\Documents\AndroidStudio\DeviceExplorer\unknown-custom_phone-192.168.19.101_5555\data\data\com.example.recyclerview\databases\grocerylist.db" schema="main" />
           </files>
           <os-authentication value="false" />
           <empty-authentication value="false" />

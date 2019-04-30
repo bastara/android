@@ -15,6 +15,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
     ListView lvMain;
     String[] names;
+    String[] namesDD;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
