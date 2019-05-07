@@ -1,6 +1,5 @@
 package com.example.layoutinflater;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,7 +9,9 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
 
     String[] name = {"Иван", "Марья", "Петр", "Антон", "Даша", "Борис",
             "Костя", "Игорь", "Иван", "Марья", "Петр", "Антон", "Даша", "Борис",

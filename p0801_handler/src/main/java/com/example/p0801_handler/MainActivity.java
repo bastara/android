@@ -1,18 +1,15 @@
 package com.example.p0801_handler;
 
-import java.lang.ref.WeakReference;
-import java.util.concurrent.TimeUnit;
-
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.lang.ref.WeakReference;
+
+public class MainActivity extends AppCompatActivity {
 
     Handler handler;
     TextView tvTest;

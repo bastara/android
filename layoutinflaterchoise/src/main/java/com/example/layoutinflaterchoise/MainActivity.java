@@ -1,6 +1,5 @@
 package com.example.layoutinflaterchoise;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,7 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-public class MainActivity extends Activity implements OnClickListener {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     final String LOG_TAG = "myLogs";
 

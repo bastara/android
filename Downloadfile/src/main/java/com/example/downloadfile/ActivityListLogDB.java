@@ -1,12 +1,13 @@
 package com.example.downloadfile;
 
-import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 
-public class ActivityListLogDB extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ActivityListLogDB extends AppCompatActivity {
 
     private final String TAG = "ЛогКот";
     DBHelper dbHelper;

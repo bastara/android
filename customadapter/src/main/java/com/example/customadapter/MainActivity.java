@@ -1,14 +1,16 @@
 package com.example.customadapter;
 
 
-import java.util.ArrayList;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
 
     ArrayList<Product> products = new ArrayList<>();
     BoxAdapter boxAdapter;

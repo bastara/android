@@ -1,15 +1,16 @@
 package com.example.downloadfile;
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.xmlpull.v1.XmlPullParser;
 
-public class ActivityListViewReal extends Activity {
+public class ActivityListViewReal extends AppCompatActivity {
     private final String TAG = "ЛогКот";
     DBHelper dbHelper;
 
