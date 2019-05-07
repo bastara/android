@@ -23,45 +23,38 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes>
-      <connection connection-id="3b6434bb-c0e4-4fc2-872e-bd5f64023295">
-        <schema name="main" object-types="table, index, view, constraint, column, dataset trigger" />
-      </connection>
-      <connection connection-id="8bbcedf7-c090-425a-a349-5d578a926913">
-        <schema name="main" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3b6434bb-c0e4-4fc2-872e-bd5f64023295">
-      <console name="smpConnection" type="STANDARD" schema="main" session="Main">select * from &quot;newsTable&quot;;
+      <console name="smpConnection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "newsTable";
 drop table if exists newsTable;
 
 
-insert into &quot;newsTable&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;, &quot;asd&quot;);
+insert into "newsTable" values (8,"adfa", "Васька", "Питер", "asdf", "asd");
 
 CREATE TABLE guerrsts(_id INTEGER, name TEXT, city TEXT, gender INTEGER, age INTEGER);
 drop table if exists guerrsts;
-insert into &quot;guerrsts&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;);
-select * from &quot;guerrsts&quot;;
+insert into "guerrsts" values (8,"adfa", "Васька", "Питер", "asdf");
+select * from "guerrsts";
 
 
 
 
 
-select * from &quot;mytable&quot;;</console>
+select * from "mytable";]]></console>
     </connection>
     <connection id="e1f2c9fb-0f79-4c97-806e-8d713d59414b">
-      <console name="Connection 1" type="STANDARD" schema="main" session="Main">select * from &quot;newsss&quot;;
+      <console name="Connection 1" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "newsss";
 drop table if exists newsss;
 
 
-insert into &quot;newsTable&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;, &quot;asd&quot;);
+insert into "newsTable" values (8,"adfa", "Васька", "Питер", "asdf", "asd");
 
 CREATE TABLE guerrsts(_id INTEGER, name TEXT, city TEXT, gender INTEGER, age INTEGER);
 drop table if exists guerrsts;
-insert into &quot;guerrsts&quot; values (8,&quot;adfa&quot;, &quot;Васька&quot;, &quot;Питер&quot;, &quot;asdf&quot;);
-select * from &quot;guerrsts&quot;;</console>
+insert into "guerrsts" values (8,"adfa", "Васька", "Питер", "asdf");
+select * from "guerrsts";]]></console>
     </connection>
     <connection id="8bbcedf7-c090-425a-a349-5d578a926913">
       <console name="grocery" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "groceryList" ;]]></console>
