@@ -1,58 +1,71 @@
 package com.example.p0801_handler;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.util.concurrent.TimeUnit;
 
-import java.lang.ref.WeakReference;
+public class MainActivity extends Activity {
 
-public class MainActivity extends AppCompatActivity {
+    final String LOG_TAG = "myLogs";
 
-    Handler handler;
-    TextView tvTest;
-    int cnt = 0;
+    Handler h;
+    TextView tvInfo;
+    Button btnStart;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-
+    /**
+     * Called when the activity is first created.
+     */
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        tvTest = findViewById(R.id.tvTest);
-
-        handler = new MyHandler(this);
-        handler.sendEmptyMessageDelayed(0, 1000);
+        tvInfo = (TextView) findViewById(R.id.tvInfo);
+        btnStart = (Button) findViewById(R.id.btnStart);
+        h = new Handler() {
+            public void handleMessage(android.os.Message msg) {
+                // обновляем TextView
+                tvInfo.setText("Закачано файлов: " + msg.what);
+                if (msg.what == 10) btnStart.setEnabled(true);
+            };
+        };
     }
 
-    void someMethod() {
-        tvTest.setText("Count = " + cnt++);
-        handler.sendEmptyMessageDelayed(0, 1000);
-    }
-
-    @Override
-    protected void onDestroy() {
-        if (handler != null)
-            handler.removeCallbacksAndMessages(null);
-        super.onDestroy();
-    }
-
-    static class MyHandler extends Handler {
-
-        WeakReference<MainActivity> wrActivity;
-
-        public MyHandler(MainActivity activity) {
-            wrActivity = new WeakReference<MainActivity>(activity);
+    public void onclick(View v) {
+        switch (v.getId()) {
+            case R.id.btnStart:
+                btnStart.setEnabled(false);
+                Thread t = new Thread(new Runnable() {
+                    public void run() {
+                        for (int i = 1; i <= 10; i++) {
+                            // долгий процесс
+                            downloadFile();
+                            h.sendEmptyMessage(i);
+                            // пишем лог
+                            Log.d(LOG_TAG, "i = " + i);
+                        }
+                    }
+                });
+                t.start();
+                break;
+            case R.id.btnTest:
+                Log.d(LOG_TAG, "test");
+                break;
+            default:
+                break;
         }
+    }
 
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            MainActivity activity = wrActivity.get();
-            if (activity != null)
-                activity.someMethod();
+    void downloadFile() {
+        // пауза - 1 секунда
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

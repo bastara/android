@@ -102,14 +102,13 @@ select * from "guerrsts";]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="FILE" />
-          <host value="" />
-          <port value="" />
-          <database value="" />
+          <host value="localhost" />
+          <port value="1234" />
+          <database value="database" />
           <files>
             <file path="C:\Users\Shurik\Documents\AndroidStudio\DeviceExplorer\unknown-custom_phone-192.168.19.101_5555\data\data\com.example.p0341_simplesqlite\databases\myDB" schema="main" />
           </files>
-          <os-authentication value="false" />
-          <empty-authentication value="false" />
+          <type value="NONE" />
           <user value="" />
           <deprecated-pwd value="" />
         </database>
@@ -147,7 +146,7 @@ select * from "guerrsts";]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -189,14 +188,13 @@ select * from "guerrsts";]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="FILE" />
-          <host value="" />
-          <port value="" />
-          <database value="" />
+          <host value="localhost" />
+          <port value="1234" />
+          <database value="database" />
           <files>
             <file path="C:\Users\Shurik\Documents\AndroidStudio\DeviceExplorer\unknown-custom_phone-192.168.19.101_5555\data\data\com.example.downloadfile\databases\newsBase" schema="main" />
           </files>
-          <os-authentication value="false" />
-          <empty-authentication value="false" />
+          <type value="NONE" />
           <user value="" />
           <deprecated-pwd value="" />
         </database>
@@ -234,7 +232,7 @@ select * from "guerrsts";]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -276,14 +274,13 @@ select * from "guerrsts";]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="FILE" />
-          <host value="" />
-          <port value="" />
-          <database value="" />
+          <host value="localhost" />
+          <port value="1234" />
+          <database value="database" />
           <files>
             <file path="C:\Users\Shurik\Documents\AndroidStudio\DeviceExplorer\unknown-custom_phone-192.168.19.101_5555\data\data\com.example.recyclerview\databases\grocerylist.db" schema="main" />
           </files>
-          <os-authentication value="false" />
-          <empty-authentication value="false" />
+          <type value="NONE" />
           <user value="" />
           <deprecated-pwd value="" />
         </database>
@@ -321,7 +318,7 @@ select * from "guerrsts";]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
