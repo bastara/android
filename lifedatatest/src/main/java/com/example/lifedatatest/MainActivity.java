@@ -26,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
 		LiveData<String> liveData = DataController.getInstance().getData();
 //		LiveData<String> liveData = dataController.getData();
 
-		liveData.observe(this, new Observer<String>() {
-			@Override
-			public void onChanged(@Nullable String value) {
-				textView.setText(value);
-			}
-		});
+//		liveData.observe(this, new Observer<String>() {
+//			@Override
+//			public void onChanged(@Nullable String value) {
+//				textView.setText(value);
+//			}
+//		});
+
+		liveData.observe(this, value->textView.setText(value));
 
 		dataController.runCycle ();
 	}
